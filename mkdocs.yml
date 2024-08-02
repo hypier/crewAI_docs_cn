@@ -1,0 +1,208 @@
+site_name: CrewAI 中文文档
+site_author: crewAI, Inc
+site_description: 最前沿的框架，用于协调角色扮演和自主AI代理。通过培养协作智能，CrewAI使代理能够无缝合作，解决复杂任务
+repo_name: crewAI_docs_cn
+repo_url: https://github.com/hypier/crewAI_docs_cn/
+site_url: https://crewai.com
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2024 crewAI, Inc
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: joaomdmoura
+      repo: crewAI
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+theme:
+  name: material
+  language: en
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+    admonition:
+      note: octicons/light-bulb-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+
+  palette:
+    - scheme: default
+      primary: red
+      accent: red
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.prune
+    # - navigation.sections
+    # - navigation.tabs
+    - search.suggest
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.instant.prefetch
+    - navigation.tracking
+    # - navigation.expand
+    - navigation.path
+    - navigation.top
+    - toc.follow
+    - toc.integrate
+    - search.highlight
+    - search.share
+
+nav:
+  - 首页: '/'
+  - 入门指南:
+    - 安装 CrewAI: 'getting-started/Installing-CrewAI.md'
+    - 开始一个新的 CrewAI 项目: 'getting-started/Start-a-New-CrewAI-Project-Template-Method.md'
+  - 核心概念:
+    - 代理: 'core-concepts/Agents.md'
+    - 任务: 'core-concepts/Tasks.md'
+    - 工具: 'core-concepts/Tools.md'
+    - 流程: 'core-concepts/Processes.md'
+    - 团队: 'core-concepts/Crews.md'
+    - 协作: 'core-concepts/Collaboration.md'
+    - 培训: 'core-concepts/Training-Crew.md'
+    - 记忆: 'core-concepts/Memory.md'
+    - 规划: 'core-concepts/Planning.md'
+    - 测试: 'core-concepts/Testing.md'
+    - 使用 LangChain 工具: 'core-concepts/Using-LangChain-Tools.md'
+    - 使用 LlamaIndex 工具: 'core-concepts/Using-LlamaIndex-Tools.md'
+  - 如何指南:
+    - 开始您的 CrewAI 项目: 'how-to/Start-a-New-CrewAI-Project.md'
+    - 安装 CrewAI: 'how-to/Installing-CrewAI.md'
+    - 入门: 'how-to/Creating-a-Crew-and-kick-it-off.md'
+    - 创建自定义工具: 'how-to/Create-Custom-Tools.md'
+    - 使用顺序流程: 'how-to/Sequential.md'
+    - 使用层级流程: 'how-to/Hierarchical.md'
+    - 创建自己的管理代理: 'how-to/Your-Own-Manager-Agent.md'
+    - 连接到任何 LLM: 'how-to/LLM-Connections.md'
+    - 自定义代理: 'how-to/Customizing-Agents.md'
+    - 编码代理: 'how-to/Coding-Agents.md'
+    - 强制工具输出为结果: 'how-to/Force-Tool-Ouput-as-Result.md'
+    - 执行中的人工输入: 'how-to/Human-Input-on-Execution.md'
+    - 异步启动团队: 'how-to/Kickoff-async.md'
+    - 为列表启动团队: 'how-to/Kickoff-for-each.md'
+    - 从特定任务启动回放: 'how-to/Replay-tasks-from-latest-Crew-Kickoff.md'
+    - 条件任务: 'how-to/Conditional-Tasks.md'
+    - 使用 AgentOps 监控代理: 'how-to/AgentOps-Observability.md'
+    - 使用 LangTrace 监控代理: 'how-to/Langtrace-Observability.md'
+  - 工具文档:
+    - Google Serper 搜索: 'tools/SerperDevTool.md'
+    - Browserbase Web 加载器: 'tools/BrowserbaseLoadTool.md'
+    - Composio 工具: 'tools/ComposioTool.md'
+    - 代码解释器: 'tools/CodeInterpreterTool.md'
+    - 抓取网站: 'tools/ScrapeWebsiteTool.md'
+    - 目录读取: 'tools/DirectoryReadTool.md'
+    - Exa 搜索 Web 加载器: 'tools/EXASearchTool.md'
+    - 文件读取: 'tools/FileReadTool.md'
+    - Selenium 抓取工具: 'tools/SeleniumScrapingTool.md'
+    - 目录 RAG 搜索: 'tools/DirectorySearchTool.md'
+    - PDF RAG 搜索: 'tools/PDFSearchTool.md'
+    - TXT RAG 搜索: 'tools/TXTSearchTool.md'
+    - CSV RAG 搜索: 'tools/CSVSearchTool.md'
+    - XML RAG 搜索: 'tools/XMLSearchTool.md'
+    - JSON RAG 搜索: 'tools/JSONSearchTool.md'
+    - Docx RAG 搜索: 'tools/DOCXSearchTool.md'
+    - MDX RAG 搜索: 'tools/MDXSearchTool.md'
+    - PG RAG 搜索: 'tools/PGSearchTool.md'
+    - 网站 RAG 搜索: 'tools/WebsiteSearchTool.md'
+    - Github RAG 搜索: 'tools/GitHubSearchTool.md'
+    - 代码文档 RAG 搜索: 'tools/CodeDocsSearchTool.md'
+    - Youtube 视频 RAG 搜索: 'tools/YoutubeVideoSearchTool.md'
+    - Youtube 频道 RAG 搜索: 'tools/YoutubeChannelSearchTool.md'
+  - 示例:
+    - 旅行计划团队: https://github.com/joaomdmoura/crewAI-examples/tree/main/trip_planner"
+    - 创建 Instagram 帖子: https://github.com/joaomdmoura/crewAI-examples/tree/main/instagram_post"
+    - 股票分析: https://github.com/joaomdmoura/crewAI-examples/tree/main/stock_analysis"
+    - 游戏生成器: https://github.com/joaomdmoura/crewAI-examples/tree/main/game-builder-crew"
+    - 使用 LangGraph 撰写邮件: https://github.com/joaomdmoura/crewAI-examples/tree/main/CrewAI-LangGraph"
+    - 登陆页面生成器: https://github.com/joaomdmoura/crewAI-examples/tree/main/landing_page_generator"
+    - 会议准备: https://github.com/joaomdmoura/crewAI-examples/tree/main/prep-for-a-meeting"
+  - 遥测: 'telemetry/Telemetry.md'
+  - 变更日志: 'https://github.com/crewAIInc/crewAI/releases'
+
+extra_css:
+  - stylesheets/output.css
+  - stylesheets/extra.css
+
+plugins:
+  - social
+  - search
+
+extra:
+  analytics:
+    provider: google
+    property: G-N3Q505TMQ6
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/joaomdmoura
+    - icon: fontawesome/brands/github
+      link: https://github.com/joaomdmoura/crewAI

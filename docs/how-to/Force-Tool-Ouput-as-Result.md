@@ -29,9 +29,9 @@ coding_agent =Agent(
 # ...
 ```
 
-### Workflow Example
+### 工作流程示例
 
-1. **Task Execution**: The agent performs tasks using the provided tools.
-2. **Tool Output**: The tool generates output, which is recorded as the task result.
-3. **Agent Interaction**: The agent can reflect and draw insights from the tools, but the output is not modified.
-4. **Result Return**: The tool output is returned as the task result, without any modifications.
+1. **任务执行**: 代理使用提供的工具执行任务。
+2. **工具输出**: 工具生成输出，记录为任务结果。
+3. **代理交互**: 代理可以从工具中反思并获取见解，但输出不会被修改。
+4. **结果返回**: 工具输出作为任务结果返回，不进行任何修改。

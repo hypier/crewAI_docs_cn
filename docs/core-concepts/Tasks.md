@@ -283,18 +283,18 @@ print(f"""
 """)
 ```
 
-## Tool Coverage Mechanism
+## 工具覆盖机制
 
-Specifying tools in a task enables dynamic adjustment of agent capabilities, highlighting the flexibility of CrewAI.
+在任务中指定工具可以动态调整代理的能力，突显了 CrewAI 的灵活性。
 
-## Error Handling and Validation Mechanisms
+## 错误处理和验证机制
 
-When creating and executing tasks, there are certain validation mechanisms in place to ensure the robustness and reliability of task attributes. These mechanisms include, but are not limited to:
+在创建和执行任务时，有一些验证机制可以确保任务属性的稳健性和可靠性。这些机制包括但不限于：
 
-- Ensuring that each task is set with only one output type to maintain clear output expectations.
-- Preventing manual assignment of the `id` attribute to preserve the integrity of the unique identifier system.
+- 确保每个任务仅设置一个输出类型，以保持明确的输出期望。
+- 防止手动分配 `id` 属性，以维护唯一标识符系统的完整性。
 
-These validations help maintain the consistency and reliability of task execution within the crewAI framework.
+这些验证有助于维护 crewAI 框架内任务执行的一致性和可靠性。
 
 ## 保存文件时创建目录
 

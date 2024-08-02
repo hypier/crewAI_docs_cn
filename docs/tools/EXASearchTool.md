@@ -45,6 +45,6 @@ import os
 os.environ['EXA_API_KEY'] = 'your_api_key_here'
 ```
 
-## Conclusion
+## 结论
 
-By integrating EXASearchTool into a Python project, users can perform real-time, relevant internet searches directly from their applications. Following the provided setup and usage guidelines makes incorporating the tool into the project simple and straightforward.
+通过将 EXASearchTool 集成到 Python 项目中，用户可以直接从他们的应用程序中执行实时、相关的互联网搜索。遵循提供的设置和使用指南，使工具的集成变得简单明了。

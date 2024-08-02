@@ -100,5 +100,5 @@ print(tool.run(search_query="Jeux Olympiques"))
 
 ```
 
-## Conclusion
-By integrating `SerperDevTool` into Python projects, users can perform real-time, relevant internet searches directly from their applications. The updated parameters allow for more customized and localized search results. Following the provided setup and usage guidelines makes it straightforward to incorporate this tool into projects.
+## 结论
+通过将 `SerperDevTool` 集成到 Python 项目中，用户可以直接从他们的应用程序中执行实时、相关的互联网搜索。更新的参数允许更定制化和本地化的搜索结果。遵循提供的设置和使用指南，使得将此工具纳入项目变得简单明了。

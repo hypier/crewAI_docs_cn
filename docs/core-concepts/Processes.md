@@ -1,11 +1,11 @@
 ---
-title: Managing Workflows in CrewAI
-description: A detailed guide on managing workflows through processes in CrewAI, including updated implementation details.
+title: 在CrewAI中管理工作流程
+description: 关于通过CrewAI中的流程管理工作流程的详细指南，包括更新的实施细节。
 ---
 
-## Understanding Processes
-!!! note "Core Concept"
-    In CrewAI, the process coordination agent's task execution is similar to project management in human teams. These processes ensure that tasks are allocated and executed efficiently according to predefined strategies.
+## 理解流程
+!!! note "核心概念"
+    在 CrewAI 中，流程协调代理的任务执行类似于人类团队中的项目管理。这些流程确保任务根据预定义的策略有效分配和执行。
 
 ## 过程实现
 
@@ -13,8 +13,8 @@ description: A detailed guide on managing workflows through processes in CrewAI,
 - **层级**：以管理层级组织任务，任务根据结构化的指挥链进行委派和执行。必须在团队中指定一个管理语言模型（`manager_llm`）或自定义管理代理（`manager_agent`），以启用层级过程，从而促进任务的创建和管理。
 - **协商过程（计划中）**：旨在实现代理之间的协作决策执行任务，这种过程类型在CrewAI中引入了一种民主的任务管理方法。该过程计划在未来开发中实现，目前尚未在代码库中实施。
 
-## The Role of Processes in Team Collaboration
-Processes enable individual agents to operate as a unified entity, streamlining their efforts to achieve common goals efficiently and coherently.
+## 流程在团队协作中的作用
+流程使个体代理能够作为一个统一的实体运作，从而有效且连贯地简化他们的努力，以实现共同目标。
 
 ## 将进程分配给团队
 要将进程分配给团队，在创建团队时指定进程类型以设置执行策略。对于层次进程，请确保为管理代理定义 `manager_llm` 或 `manager_agent`。
@@ -58,13 +58,13 @@ def example_function():
     print("This is a code block.")
 ```
 
-## 过程类：详细概述
+## 过程类：详细概述  
 `Process` 类被实现为枚举 (`Enum`)，确保类型安全并将过程值限制为定义的类型 (`sequential`, `hierarchical`)。共识过程计划在未来纳入，强调我们对持续发展和创新的承诺。
 
-## Additional Task Features
-- **Asynchronous Execution**: Tasks can now be executed asynchronously, allowing for parallel processing and efficiency improvements. This feature is designed to enable tasks to occur simultaneously, thereby enhancing the overall productivity of the team.
-- **Manual Input Review**: An optional feature that allows for manual review of task outputs to ensure quality and accuracy before finalization. This additional step introduces a layer of oversight, providing opportunities for human intervention and validation.
-- **Output Customization**: Tasks support multiple output formats, including JSON (`output_json`), Pydantic models (`output_pydantic`), and file outputs (`output_file`), providing flexibility in capturing and utilizing task results. This makes the possibilities for output vast, catering to diverse needs and requirements.
+## 附加任务功能
+- **异步执行**：任务现在可以异步执行，允许并行处理和效率提升。此功能旨在使任务能够同时进行，从而提高团队的整体生产力。
+- **手动输入审核**：一个可选功能，允许手动审核任务输出，以确保质量和准确性在最终确定之前。此额外步骤引入了一层监督，提供了人为干预和验证的机会。
+- **输出自定义**：任务支持多种输出格式，包括 JSON (`output_json`)、Pydantic 模型 (`output_pydantic`) 和文件输出 (`output_file`)，为捕获和利用任务结果提供灵活性。这使得输出的可能性非常广泛，以满足多样化的需求和要求。
 
-## Conclusion  
-The structured collaboration facilitated by the workflows in CrewAI is essential for achieving systematic teamwork among agents. This document has been updated to reflect the latest features, enhancements, and planned consensus process integrations, ensuring that users have access to the most current and comprehensive information.
+## 结论  
+CrewAI 中的工作流程促进的结构化协作对于实现代理之间的系统化团队合作至关重要。本文档已更新，以反映最新的功能、增强和计划中的共识过程集成，确保用户可以访问最新和最全面的信息。

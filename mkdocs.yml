@@ -136,9 +136,7 @@ nav:
     - 使用 LangChain 工具: 'core-concepts/Using-LangChain-Tools.md'
     - 使用 LlamaIndex 工具: 'core-concepts/Using-LlamaIndex-Tools.md'
   - 如何指南:
-    - 开始您的 CrewAI 项目: 'how-to/Start-a-New-CrewAI-Project.md'
-    - 安装 CrewAI: 'how-to/Installing-CrewAI.md'
-    - 入门: 'how-to/Creating-a-Crew-and-kick-it-off.md'
+    - 自定义提示词: 'how-to/Customize-Prompts.md'
     - 创建自定义工具: 'how-to/Create-Custom-Tools.md'
     - 使用顺序流程: 'how-to/Sequential.md'
     - 使用层级流程: 'how-to/Hierarchical.md'

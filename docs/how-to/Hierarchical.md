@@ -1,6 +1,6 @@
 ---
-title: 在CrewAI中实施层次过程
-description: 一份全面的指南，帮助您理解和应用层次过程于您的CrewAI项目，已更新以反映最新的编码实践和功能。
+title: Implementing Hierarchical Processes in CrewAI
+description: A comprehensive guide to help you understand and apply hierarchical processes to your CrewAI projects, updated to reflect the latest coding practices and features.
 ---
 
 ## 介绍
@@ -69,10 +69,10 @@ project_crew = Crew(
 )
 ```
 
-### Workflow Implementation
-1. **Task Allocation**: The manager strategically assigns tasks based on each agent's capabilities and available tools.
-2. **Execution and Review**: Agents complete tasks with options for asynchronous execution and callback functions to ensure a smooth workflow.
-3. **Sequential Task Progression**: Although it is a hierarchical process, tasks follow a logical sequence for smooth advancement, thanks to the manager's oversight.
+### 工作流程实施
+1. **任务分配**：经理根据每个代理的能力和可用工具战略性地分配任务。
+2. **执行与审核**：代理完成任务，提供异步执行和回调函数的选项，以确保工作流程的顺畅。
+3. **顺序任务推进**：尽管这是一个层级过程，但由于经理的监督，任务遵循逻辑顺序以实现顺利推进。
 
-## Conclusion  
-Adopting a layered process in CrewAI, along with correctly configuring and understanding the system's functionalities, helps achieve orderly and efficient project management. Utilize advanced features and customization options to tailor workflows to your specific needs, ensuring optimal task execution and project success.
+## 结论  
+在CrewAI中采用分层流程，并正确配置和理解系统的功能，有助于实现有序和高效的项目管理。利用高级功能和自定义选项，根据您的具体需求调整工作流程，确保任务的最佳执行和项目的成功。

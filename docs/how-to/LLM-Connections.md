@@ -1,6 +1,6 @@
 ---
-title: 将 CrewAI 连接到 LLMs
-description: 关于将 CrewAI 与各种大型语言模型 (LLMs) 集成的全面指南，包括详细的类属性、方法和配置选项。
+title: Connecting CrewAI to LLMs
+description: A comprehensive guide on integrating CrewAI with various Large Language Models (LLMs), including detailed class attributes, methods, and configuration options.
 ---
 
 ## 将 CrewAI 连接到 LLMs
@@ -131,8 +131,8 @@ llm = HuggingFaceHub(
 )
 ```
 
-## OpenAI Compatible API Endpoints
-Seamlessly switch between APIs and models via environment variables, supporting platforms like FastChat, LM Studio, Groq, and Mistral AI.
+## OpenAI 兼容的 API 端点
+通过环境变量无缝切换 API 和模型，支持 FastChat、LM Studio、Groq 和 Mistral AI 等平台。
 
 ### 配置示例
 #### FastChat
@@ -222,5 +222,5 @@ azure_agent = Agent(
 )
 ```
 
-## Conclusion
-Integrating CrewAI with different LLMs expands the versatility of the framework, enabling it to deliver customized and efficient AI solutions across various domains and platforms.
+## 结论
+将 CrewAI 与不同的 LLM 集成扩展了框架的多功能性，使其能够在各个领域和平台上提供定制化和高效的 AI 解决方案。

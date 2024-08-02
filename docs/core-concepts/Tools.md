@@ -204,5 +204,5 @@ writer1 = Agent(
     #...
 ```
 
-## Conclusion
-Tools are essential for extending the capabilities of CrewAI agents, enabling them to undertake a wide range of tasks and collaborate effectively. When building solutions with CrewAI, leverage custom tools and existing tools to enhance your agents and elevate the AI ecosystem. Consider utilizing error handling, caching mechanisms, and the flexibility of tool parameters to optimize the performance and capabilities of your agents.
+## 结论
+工具对于扩展 CrewAI 代理的能力至关重要，使其能够承担广泛的任务并有效协作。在使用 CrewAI 构建解决方案时，利用自定义工具和现有工具来增强您的代理并提升 AI 生态系统。考虑利用错误处理、缓存机制和工具参数的灵活性来优化您的代理的性能和能力。

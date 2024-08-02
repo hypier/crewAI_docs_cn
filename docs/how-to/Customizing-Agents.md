@@ -1,6 +1,6 @@
 ---
-title: Customizing Agents in CrewAI
-description: A comprehensive guide tailored to customizing agents for specific roles, tasks, and advanced customizations within the CrewAI framework.
+title: 在CrewAI中定制代理
+description: 一份全面的指南，专门针对在CrewAI框架内为特定角色、任务和高级定制进行代理定制。
 ---
 
 ## 可定制属性
@@ -44,8 +44,8 @@ def example_function():
     pass
 ```
 
-### Maximum Iterations for Task Execution
-`max_iter` property allows users to define the maximum number of iterations an agent can execute within a single task to prevent infinite loops or excessively long execution times. The default value is set to 25, providing a balance between comprehensiveness and efficiency. Once the agent approaches this number, it will strive to provide a good answer.
+### 任务执行的最大迭代次数
+`max_iter` 属性允许用户定义代理在单个任务中可以执行的最大迭代次数，以防止无限循环或过长的执行时间。默认值设置为 25，提供了全面性和效率之间的平衡。一旦代理接近这个数字，它将努力提供一个好的答案。
 
 ## 自定义代理和工具
 代理通过在初始化时定义其属性和工具来进行定制。工具对于代理的功能至关重要，使其能够执行专业任务。`tools` 属性应该是代理可以使用的工具数组，默认初始化为空列表。可以在代理初始化后添加或修改工具，以适应新需求。
@@ -100,5 +100,5 @@ agent = Agent(
 )
 ```
 
-## Conclusion
-By setting roles, goals, backstories, and tools, customizing agents in CrewAI, and leveraging advanced options such as language model customization, memory, performance settings, and delegation preferences, a flexible and efficient AI team has been built, ready to tackle complex challenges.
+## 结论
+通过设定角色、目标、背景故事和工具，定制CrewAI中的代理，并利用语言模型定制、记忆、性能设置和委派偏好等高级选项，建立了一个灵活高效的AI团队，准备应对复杂挑战。

@@ -14,7 +14,7 @@ def hello_world():
     print("Hello, world!")
 ```
 
-## Internationalization and Customization Support
+## 国际化和定制化支持
 
 ### 自定义提示与 `prompt_file`
 
@@ -24,9 +24,9 @@ def hello_world():
 
 自定义提示可以在 JSON 文件中定义，类似于提供的 [这里](https://github.com/joaomdmoura/crewAI/blob/main/src/crewai/translations/en.json) 的示例。
 
-### Supported Languages
+### 支持的语言
 
-CrewAI's custom prompts support internationalization, allowing prompts to be written in different languages. This is especially useful for global teams or projects that require multilingual support.
+CrewAI 的自定义提示支持国际化，允许以不同语言编写提示。这对于需要多语言支持的全球团队或项目尤为有用。
 
 ## 如何使用 `prompt_file` 属性
 
@@ -90,7 +90,7 @@ crew = Crew(
 crew.kickoff()
 ```
 
-## Advanced Customization Features
+## 高级自定义功能
 
 ### `language` 属性
 

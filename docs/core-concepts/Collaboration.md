@@ -35,11 +35,17 @@ def example_function():
 - **缓存管理 (`cache`)**：确定团队是否应使用缓存来存储工具执行的结果，以优化性能。
 - **输出日志记录 (`output_log_file`)**：指定记录团队执行输出的文件路径。
 
-## Delegation: Divide and Conquer
-Delegation enhances functionality and improves the overall capability of the team by allowing agents to intelligently distribute tasks or seek assistance.
+## 委托：分而治之
+委托通过允许代理智能分配任务或寻求帮助，增强功能并提高团队的整体能力。
 
 ## Implementation Collaboration and Delegation
 建立一个团队涉及定义每个代理的角色和能力。CrewAI 无缝管理他们的互动，确保高效的协作和委派，并提供增强的定制和监控功能，以适应各种操作需求。
+
+```
+# Example code block
+def example_function():
+    print("This is an example.")
+```
 
 ## 示例场景
 考虑一个团队，其中有一个负责数据收集的研究员代理和一个负责编写报告的作家代理。先进的语言模型管理和流程属性的整合使得更复杂的互动成为可能，例如作家将复杂的研究任务委派给研究员或查询特定信息，从而促进无缝的工作流程。 
@@ -49,5 +55,5 @@ def example_function():
     print("This is an example function.")
 ```
 
-## Conclusion
-Integrating advanced attributes and functionalities into the CrewAI framework significantly enriches the agent collaboration ecosystem. These enhancements not only simplify interactions but also provide unprecedented flexibility and control, paving the way for advanced AI-driven solutions capable of handling complex tasks through intelligent collaboration and delegation.
+## 结论
+将先进的属性和功能集成到CrewAI框架中，显著丰富了代理协作生态系统。这些增强不仅简化了交互，还提供了前所未有的灵活性和控制能力，为能够通过智能协作和委派处理复杂任务的先进AI驱动解决方案铺平了道路。

@@ -1,6 +1,6 @@
 ---
-title: Using Sequential Processes in crewAI
-description: A comprehensive guide to leveraging sequential processes for task execution in the crewAI project.
+title: 在 crewAI 中使用顺序过程
+description: 一份全面的指南，旨在利用顺序过程在 crewAI 项目中执行任务。
 ---
 
 ## 介绍
@@ -52,18 +52,18 @@ report_crew = Crew(
 result = report_crew.kickoff()
 ```
 
-### Workflow Example
-1. **Initial Task**: In a sequential workflow, the first agent completes their task and emits a completion signal.
-2. **Subsequent Tasks**: Agents take over their tasks based on the workflow type, guided by the results of previous tasks or directives from management.
-3. **Completion**: Once the final task is executed, the workflow ends, and the project is complete.
+### 工作流程示例
+1. **初始任务**：在顺序工作流程中，第一个代理完成他们的任务并发出完成信号。
+2. **后续任务**：代理根据工作流程类型接管他们的任务，依据之前任务的结果或管理层的指令进行指导。
+3. **完成**：一旦最后一个任务执行完毕，工作流程结束，项目完成。
 
-## Advanced Features
+## 高级功能
 
 ### 任务委派
 在顺序流程中，如果代理的 `allow_delegation` 设置为 `True`，则他们可以将任务委派给团队中的其他代理。当团队中有多个代理时，此功能会自动设置。
 
-### Asynchronous Execution
-Tasks can be executed asynchronously, allowing for parallel processing when appropriate. To create an asynchronous task, set `async_execution=True` when defining the task.
+### 异步执行
+任务可以异步执行，在适当的情况下允许并行处理。要创建异步任务，请在定义任务时设置 `async_execution=True`。
 
 ### 内存与缓存
 CrewAI 支持内存和缓存功能：
@@ -96,8 +96,8 @@ def example_function():
     pass
 ```
 
-## Best Practices for Sequential Processes
-1. **Order Matters**: Arrange tasks in a logical sequence so that each task builds on the previous one.
-2. **Clear Task Descriptions**: Provide detailed descriptions for each task to effectively guide agents.
-3. **Appropriate Agent Selection**: Match the skills and roles of agents to the requirements of each task.
-4. **Leverage Context**: Use the context from the previous task to inform subsequent tasks.
+## 顺序流程的最佳实践
+1. **顺序重要**：以逻辑顺序排列任务，使每个任务都建立在前一个任务的基础上。
+2. **清晰的任务描述**：为每个任务提供详细描述，以有效指导代理。
+3. **适当的代理选择**：将代理的技能和角色与每个任务的要求相匹配。
+4. **利用上下文**：使用前一个任务的上下文来指导后续任务。
